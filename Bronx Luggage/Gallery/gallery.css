@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    background-color: #fff;
+    font-family: 'Arapey', serif;
+}
+::-webkit-scrollbar-button{
+    width: 8px;
+    background: black;
+    border-radius: 30px;
+}
+::-webkit-scrollbar{
+    background: rgb(56, 54, 54);
+    border-radius: 50px;
+    width: 10px;
+}
+
+.top{
+    display: flex;
+    margin-bottom: 11px;
+    color: #A9313B;
+    font-size: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.top h1 {
+    text-align: center;
+    flex-grow: 1;
+    font-size: 3rem;
+  }
+
+.top i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+}
+
+
+p{
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 7px;
+    color: #A9313B;
+}
+
+hr{
+    margin-bottom: 9px;
+}
+
+
+#item_1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+#item_2{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+#item_3{
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+#item_4{
+    grid-column-start: 10;
+    grid-column-end: 14;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+#item_5{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+#item_6{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+#item_7{ 
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+#item_8{
+    grid-column-start: 10;
+    grid-column-end: 14;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+#item_9{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 8;
+}
+#item_10{
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 8;
+}
+#item_11{
+    grid-column-start: 10;
+    grid-column-end: 14;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+#item_12{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 8;
+    grid-row-end: 10;
+}
+#item_13{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 8;
+    grid-row-end: 11;
+}
+#item_14{
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 8;
+    grid-row-end: 11;
+}
+#item_15{
+    grid-column-start: 10;
+    grid-column-end: 14;
+    grid-row-start: 9;
+    grid-row-end: 12;
+}
+#item_16{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 10;
+    grid-row-end: 13;
+}
+#item_17{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 11;
+    grid-row-end: 14;
+}
+#item_18{
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 11;
+    grid-row-end: 14;
+}
+#item_19{
+    grid-column-start: 10;
+    grid-column-end: 14;
+    grid-row-start: 12;
+    grid-row-end: 14;
+}
+#item_20{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 13;
+    grid-row-end: 16;
+}
+#item_21{
+    grid-column-start: 4;
+    grid-column-end: 10;
+    grid-row-start: 14;
+    grid-row-end: 16;
+}
+#item_22{
+    grid-column-start: 10;
+    grid-column-end: 14;
+    grid-row-start: 14;
+    grid-row-end: 16;
+}
+#item_23{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 16;
+    grid-row-end: 18;
+}
+#item_24{
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 16;
+    grid-row-end: 18;
+}
+#item_25{
+    grid-column-start: 10;
+    grid-column-end: 14;
+    grid-row-start: 16;
+    grid-row-end: 18;
+}
+
+.item{
+    /* background-image:url(../Pictures/duffel.png); */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    block-size: auto;
+    overflow: hidden;
+    filter: opacity(70%) blur(.3px);
+    border-radius: 5px;
+}
+#gallery > .item:hover{
+    box-shadow: 0px 6px 10px 5px rgba(24, 23, 23, 0.4);
+    transition-duration: .8s;
+    filter: none;
+}
+
+#gallery{
+    height: 450vh;
+    width:  inherit;
+    background-color: #DFB392;
+    border-radius: 5px;
+    display: grid;
+    gap: 15px 15px;
+    padding: 10px 10px 10px 10px ;
+}
+
+@media screen and (max-width: 720x){
+    .top h1{
+        font-size: 100px;
+    }
+    #gallery{
+        grid-template-columns: repeat(1, 20px);
+        gap: 3px 3px;
+    }
+}

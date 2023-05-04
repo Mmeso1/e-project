@@ -1,0 +1,49 @@
+<head>
+  <link rel="stylesheet" href="./Gallery/gallery.css">
+</head>
+
+
+    <!-- These are the texts at the top of the gallery's page and the fa button returns the homepage view on click -->
+    <div class="top">
+        <h1>Gallery</h1>
+        <i class="fa fa-window-close" onclick="goToHomePage()"></i>
+    </div>
+    <p>"Travel far, travel often, and travel light. Let your luggage be your companion, not your burden." - Unknown</p>
+    <hr>
+
+    <!-- In here, the goal was to get random urls to populate our gallery from the json we created so the urls were gotten through indexing the array of objects in the json file -->
+    <div id="gallery">
+        <div class="item" id="item_1" style="background-image: url('{{men_items[5].image_url}}')"></div>
+        <div class="item" id="item_2" style="background-image: url('{{men_items[8].image_url}}')"></div>
+        <div class="item" id="item_3" style="background-image: url('{{men_items[12].image_url}}')"></div>
+        <div class="item" id="item_4" style="background-image: url('{{men_items[13].image_url}}')"></div>
+        <div class="item" id="item_5" style="background-image: url('{{women_items[2].image_url}}')"></div>
+        <div class="item" id="item_6" style="background-image: url('{{women_items[13].image_url}}')"></div>
+        <div class="item" id="item_7" style="background-image: url('{{women_items[5].image_url}}')"></div>
+        <div class="item" id="item_8" style="background-image: url('{{men_items[20].image_url}}')"></div>
+        <div class="item" id="item_9" style="background-image: url('{{women_items[22].image_url}}')"></div>
+        <div class="item" id="item_10" style="background-image: url('{{women_items[15].image_url}}')"></div>
+        <div class="item" id="item_11" style="background-image: url('{{women_items[33].image_url}}')"></div>
+        <div class="item" id="item_12" style="background-image: url('{{accessories[11].image_url}}')"></div>
+        <div class="item" id="item_13" style="background-image: url('{{accessories[16].image_url}}')"></div>
+        <div class="item" id="item_14" style="background-image: url('{{women_items[42].image_url}}')"></div>
+        <div class="item" id="item_15" style="background-image: url('{{men_items[25].image_url}}')"></div>
+        <div class="item" id="item_16" style="background-image: url('{{men_items[35].image_url}}')"></div>
+        <div class="item" id="item_17" style="background-image: url('{{men_items[47].image_url}}')"></div>
+        <div class="item" id="item_18" style="background-image: url('{{women_items[9].image_url}}')"></div>
+        <div class="item" id="item_19" style="background-image: url('{{women_items[25].image_url}}')"></div>
+        <div class="item" id="item_20" style="background-image: url('{{women_items[28].image_url}}')"></div>
+        <div class="item" id="item_21" style="background-image: url('{{men_items[21].image_url}}')"></div>
+        <div class="item" id="item_22" style="background-image: url('{{women_items[21].image_url}}')"></div>
+        <div class="item" id="item_23" style="background-image: url('{{accessories[24].image_url}}')"></div>
+        <div class="item" id="item_24" style="background-image: url('{{accessories[10].image_url}}')"></div>
+        <div class="item" id="item_25" style="background-image: url('{{accessories[17].image_url}}')"></div>
+
+    </div>
+
+    <!-- This function is used so on click of the close button, the view will be redirected back to the homepage which is contained in this file -->
+    <script>
+        function goToHomePage() {
+          window.location.href = '#';
+        }
+      </script>
